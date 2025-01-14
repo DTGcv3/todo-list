@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte Étudiant</title>
+  <style>
+    /* Style global */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Carte d'étudiant */
+    .student-card {
+      background-color: #ffffff;
+      border: 2px solid #4a90e2;
+      border-radius: 10px;
+      width: 400px;
+      padding: 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* En-tête avec arrière-plan bleu */
+    .header {
+      background-color: #4a90e2; /* Bleu pour l'entête */
+      color: #ffffff; /* Texte blanc */
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .header .logo {
+      width: 50px;
+      height: 50px;
+      background-image: url('logo_1.png'); /* Chemin vers le logo */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 15px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Section principale */
+    .main {
+      display: flex;
+      padding: 20px;
+    }
+
+    /* Section gauche */
+    .left-section {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .student-photo {
+      width: 100px;
+      height: 120px;
+      border: 2px solid #4a90e2;
+      border-radius: 5px;
+      background-image: url('photo.avif'); /* Chemin de la photo */
+      background-size: cover;
+      background-position: center;
+      background-color: #eaeaea;
+    }
+
+    /* Section droite */
+    .right-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .details p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .details strong {
+      color: #4a90e2;
+    }
+  </style>
+</head>
+<body>
+  <div class="student-card">
+    <!-- En-tête -->
+    <div class="header">
+      <div class="logo"></div>
+      <h1>CARTE D'ÉTUDIANT</h1>
+    </div>
+    <!-- Section principale -->
+    <div class="main">
+      <!-- Section gauche -->
+      <div class="left-section">
+        <div class="student-photo"></div>
+      </div>
+      <!-- Section droite -->
+      <div class="right-section">
+        <div class="details">
+          <p><strong>Nom et Prénom:</strong> Chaimaa Bennaouar</p>
+          <p><strong>Matricule:</strong> 2200578</p>
+          <p><strong>Établissement:</strong> Ecole d'Ingénierie Digitale et d'Intelligence Artificielle</p>
+          <p><strong>Université:</strong> Euromed University of Fes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
